@@ -1,0 +1,6 @@
+{
+  "name": "Cuadro — Rompecabezas Deslizante",
+  "description": "Rompecabezas deslizante personalizable de ancho por alto con números, fotos de tu galería, retroceso de movimientos, mezcla resoluble y modo práctica libre.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

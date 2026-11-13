@@ -1,11 +1,22 @@
-<div align="center">
+# Cuadro — Rompecabezas Deslizante
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Aplicación web interactiva de rompecabezas deslizante con tamaño personalizable (`Ancho × Alto`), modo con números, modo con fotos de tu galería, retroceso de movimientos, mezcla con garantía de solución y modo **Barajar a tu gusto** para practicar movimientos.
 
-  <h1>Built with AI Studio</h2>
+## Comandos disponibles
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+```bash
+npm install      # Instalar dependencias
+npm run dev      # Servidor local en http://localhost:3000
+npm run lint     # Verificación de tipos TypeScript
+npm test         # Pruebas unitarias de lógica del rompecabezas
+npm run build    # Compilar para producción en /dist
+```
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Publicar con GitHub Actions (GitHub Pages)
 
-</div>
+El flujo de despliegue ya está configurado en `.github/workflows/deploy.yml`.
+
+1. Sube el proyecto a un repositorio en GitHub (rama `main` o `master`).
+2. En tu repositorio ve a **Settings → Pages**.
+3. En **Build and deployment → Source**, selecciona **GitHub Actions**.
+4. Cada `push` a `main`/`master` (o al pulsar **Run workflow** manualmente en la pestaña **Actions**) ejecutará la verificación, las pruebas, la compilación y desplegará el sitio automáticamente.
