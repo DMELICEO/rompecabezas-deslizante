@@ -28,12 +28,7 @@ jobs:
           node-version: '22'
 
       - name: Instalar dependencias
-        run: |
-          if [ -f package-lock.json ]; then
-            npm ci
-          else
-            npm install
-          fi
+        run: npm install --no-audit --no-fund
 
       - name: Verificar tipos (TypeScript)
         run: npm run lint
